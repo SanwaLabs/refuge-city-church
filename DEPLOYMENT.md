@@ -6,6 +6,10 @@ https://github.com/SanwaLabs/refuge-city-church
 
 Live site:
 
+https://refugecitychurchav.org/
+
+GitHub Pages fallback URL:
+
 https://sanwalabs.github.io/refuge-city-church/
 
 ## Update The Site
@@ -34,10 +38,10 @@ The repo must remain public for free GitHub Pages hosting on GitHub Free for org
 
 ## Namecheap Custom Domain
 
-When you are ready to connect the real domain, add a `CNAME` file to this repo containing the root domain, for example:
+This repo includes a `CNAME` file containing the root domain:
 
 ```text
-example.com
+refugecitychurchav.org
 ```
 
 Then in Namecheap, go to `Domain List` > `Manage` > `Advanced DNS` and add these records.
