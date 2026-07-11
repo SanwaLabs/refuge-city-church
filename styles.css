@@ -47,6 +47,17 @@ a {
   text-decoration: none;
 }
 
+.give-button-fixed {
+  position: fixed;
+  top: 1.15rem;
+  right: 1.5rem;
+  z-index: 30;
+}
+
+.give-button-fixed .tithely-give-button {
+  box-shadow: 0 10px 28px rgba(0, 120, 70, 0.28);
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -58,6 +69,7 @@ a {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 1rem 1.5rem;
+  padding-right: 12.5rem;
   backdrop-filter: blur(18px);
 }
 
@@ -445,10 +457,21 @@ address {
 }
 
 @media (max-width: 920px) {
+  .give-button-fixed {
+    top: 0.95rem;
+    right: 1rem;
+  }
+
+  .give-button-fixed .tithely-give-button {
+    font-size: 15px !important;
+    padding: 10px 28px !important;
+  }
+
   .site-header {
     align-items: center;
     flex-wrap: wrap;
     gap: 0.85rem 1.25rem;
+    padding-right: 7.5rem;
   }
 
   .brand-logo {
@@ -500,6 +523,17 @@ address {
   .site-header {
     padding-top: 0.85rem;
     padding-bottom: 0.85rem;
+    padding-right: 6.5rem;
+  }
+
+  .give-button-fixed {
+    top: 0.85rem;
+    right: 0.85rem;
+  }
+
+  .give-button-fixed .tithely-give-button {
+    font-size: 14px !important;
+    padding: 9px 22px !important;
   }
 
   .brand-logo {
