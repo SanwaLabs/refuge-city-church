@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Site TODO | Refuge City Church</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --color-cream: #fbf4e9;
+      --color-sand: #ead8bf;
+      --color-clay: #b46a43;
+      --color-clay-dark: #884a2d;
+      --color-ink: #2d241f;
+      --color-muted: #75685f;
+      --color-white: #fffaf3;
+      --color-gold: #d9a441;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--color-ink);
+      background:
+        radial-gradient(circle at top left, rgba(217, 164, 65, 0.2), transparent 30rem),
+        linear-gradient(180deg, #fff8ef 0%, var(--color-cream) 45%, #f7ead9 100%);
+      font-family: "Inter", Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background-image:
+        linear-gradient(rgba(45, 36, 31, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(45, 36, 31, 0.025) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+
+    .todo-page {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    .todo-back {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: var(--color-clay-dark);
+      font-size: 0.94rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .todo-back:hover {
+      color: var(--color-clay);
+      text-decoration: underline;
+    }
+
+    .todo-page h1 {
+      margin: 0 0 0.5rem;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(2rem, 4vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.15;
+    }
+
+    .todo-note {
+      margin: 0 0 2.5rem;
+      color: var(--color-muted);
+      font-size: 0.95rem;
+    }
+
+    .todo-content h2 {
+      margin: 2rem 0 0.75rem;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.45rem;
+      font-weight: 600;
+      color: var(--color-ink);
+    }
+
+    .todo-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .todo-list li {
+      position: relative;
+      margin: 0.55rem 0;
+      padding-left: 2rem;
+      color: var(--color-ink);
+    }
+
+    .todo-list li::before {
+      content: "";
+      position: absolute;
+      top: 0.3rem;
+      left: 0;
+      width: 1.15rem;
+      height: 1.15rem;
+      border: 2px solid var(--color-sand);
+      border-radius: 6px;
+      background: var(--color-white);
+    }
+
+    .todo-list li.done::before {
+      border-color: var(--color-clay);
+      background: var(--color-clay);
+    }
+
+    .todo-list li.done::after {
+      content: "";
+      position: absolute;
+      top: 0.66rem;
+      left: 0.35rem;
+      width: 0.42rem;
+      height: 0.22rem;
+      border-left: 2px solid var(--color-white);
+      border-bottom: 2px solid var(--color-white);
+      transform: rotate(-45deg);
+    }
+
+    .todo-list del {
+      color: var(--color-muted);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="todo-page">
+    <a class="todo-back" href="/">← Back to Refuge City Church</a>
+    <h1>Site TODO</h1>
+    <p class="todo-note">Internal checklist — not linked from the main site.</p>
+    <div class="todo-content">
+      <h2>July 2026</h2>
+      <ul class="todo-list">
+        <li class="done"><del>Initial website</del></li>
+      </ul>
+
+      <h2>September 2026</h2>
+      <ul class="todo-list">
+        <li>New service times</li>
+        <li>Statement of belief section</li>
+        <li>Slideshow (First draft)</li>
+      </ul>
+    </div>
+  </main>
+</body>
+
+</html>
