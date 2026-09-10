@@ -54,7 +54,7 @@ inline script in `index.html`.
 Service times appear in three places, so update all of them together:
 
 - the `#services` cards
-- the hero card ("Join Us Wednesday")
+- the hero card ("Join Us Sunday")
 - the footer tagline
 
 The `data-hf-id` attributes are leftovers from a visual editor export. They are
@@ -64,7 +64,7 @@ After changing `styles.css`, bump the version in the stylesheet link in
 `index.html` so returning visitors do not get a cached copy:
 
 ```html
-<link rel="stylesheet" href="styles.css?v=1.0.3">
+<link rel="stylesheet" href="styles.css?v=1.0.4">
 ```
 
 ## Search indexing

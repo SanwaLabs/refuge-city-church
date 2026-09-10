@@ -142,10 +142,22 @@
       list-style: none;
     }
 
-    .todo-changes li {
+    .todo-changes > li {
       margin: 0.75rem 0;
       color: var(--color-muted);
       font-size: 0.95rem;
+    }
+
+    .todo-changes ul {
+      margin: 0.4rem 0 0;
+      padding-left: 1.25rem;
+    }
+
+    .todo-changes ul li {
+      margin: 0.3rem 0;
+      color: var(--color-muted);
+      font-size: 0.95rem;
+      list-style: disc;
     }
 
     .todo-change-date {
@@ -172,7 +184,7 @@
 
       <h2>September 2026</h2>
       <ul class="todo-list">
-        <li>New service times</li>
+        <li class="done"><del>New service times</del></li>
         <li class="done"><del>Initial Statement of belief section</del></li>
         <li>Slideshow (First draft)</li>
       </ul>
@@ -186,9 +198,17 @@
       <ul class="todo-changes">
         <li>
           <span class="todo-change-date">September 9, 2026</span>
-          Added a Statement of Belief section on the homepage that opens the full
-          articles in a native dialog modal (no libraries). Sitewide
-          <code>noindex, nofollow</code> is on for now until go-live.
+          <ul>
+            <li>Sundays at 10:00 AM</li>
+            <li>Discipleship Wednesdays at 6:30 PM</li>
+          </ul>
+        </li>
+        <li>
+          <span class="todo-change-date">September 9, 2026</span>
+          <ul>
+            <li>Added a Statement of Belief section on the homepage (opens in a dialog, no libraries)</li>
+            <li>Sitewide <code>noindex, nofollow</code> stays on until go-live</li>
+          </ul>
         </li>
       </ul>
     </div>
