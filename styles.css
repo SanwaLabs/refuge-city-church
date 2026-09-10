@@ -297,6 +297,16 @@ address {
   text-align: center;
 }
 
+.beliefs-section .section-heading {
+  margin-bottom: 1.75rem;
+}
+
+.beliefs-section .section-heading>p:last-child {
+  margin-bottom: 0;
+  color: var(--color-muted);
+  font-size: 1.05rem;
+}
+
 .about-section {
   padding-top: 3rem;
 }
@@ -456,6 +466,161 @@ address {
   margin-bottom: 0;
 }
 
+dialog:not([open]) {
+  display: none;
+}
+
+.beliefs-dialog {
+  width: min(720px, calc(100vw - 2rem));
+  max-height: 85vh;
+  padding: 0;
+  border: 1px solid rgba(136, 74, 45, 0.14);
+  border-radius: var(--radius-large);
+  color: var(--color-ink);
+  background: var(--color-white);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.beliefs-dialog::backdrop {
+  background: rgba(45, 36, 31, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+.beliefs-dialog.is-fallback {
+  display: block;
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  width: auto;
+  max-height: none;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: rgba(45, 36, 31, 0.55);
+  box-shadow: none;
+}
+
+.beliefs-dialog.is-fallback .beliefs-dialog-panel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(720px, calc(100vw - 2rem));
+  max-height: 85vh;
+  overflow: hidden;
+  border: 1px solid rgba(136, 74, 45, 0.14);
+  border-radius: var(--radius-large);
+  background: var(--color-white);
+  box-shadow: var(--shadow);
+  transform: translate(-50%, -50%);
+}
+
+.beliefs-dialog-panel {
+  display: flex;
+  flex-direction: column;
+  max-height: 85vh;
+}
+
+.beliefs-dialog-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem 1.5rem 1rem;
+  border-bottom: 1px solid rgba(136, 74, 45, 0.12);
+}
+
+.beliefs-dialog-header h2 {
+  margin: 0;
+  font-size: clamp(1.55rem, 3vw, 2.1rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.beliefs-dialog-close {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: -0.35rem -0.35rem 0 0;
+  padding: 0;
+  border: 1px solid rgba(136, 74, 45, 0.18);
+  border-radius: 999px;
+  color: var(--color-clay-dark);
+  background: rgba(255, 250, 243, 0.9);
+  font-size: 1.65rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.beliefs-dialog-close:hover {
+  color: var(--color-white);
+  background: var(--color-clay);
+}
+
+.beliefs-dialog-body {
+  padding: 0.5rem 1.5rem 1.75rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.belief-article {
+  padding: 1.15rem 0;
+  border-bottom: 1px solid rgba(136, 74, 45, 0.1);
+}
+
+.belief-article:last-child {
+  border-bottom: 0;
+  padding-bottom: 0.35rem;
+}
+
+.belief-article h3 {
+  margin: 0 0 0.65rem;
+  color: var(--color-ink);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.belief-article ul {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--color-muted);
+}
+
+.belief-article li {
+  margin: 0.45rem 0;
+}
+
+.belief-article li::marker {
+  color: var(--color-clay);
+}
+
+.belief-cite {
+  margin-left: 0.15rem;
+  font-size: 0.78em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.belief-cite a {
+  color: var(--color-clay-dark);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.belief-cite a:hover {
+  color: var(--color-clay);
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
 @media (max-width: 920px) {
   .give-button-fixed {
     top: 0.95rem;
@@ -577,6 +742,33 @@ address {
 
   .pastors-bio {
     padding: 1.5rem;
+  }
+
+  .beliefs-dialog,
+  .beliefs-dialog.is-fallback .beliefs-dialog-panel {
+    width: calc(100vw - 1rem);
+    max-height: calc(100vh - 1rem);
+    border-radius: 22px;
+  }
+
+  .beliefs-dialog.is-fallback .beliefs-dialog-panel {
+    top: 0.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    width: auto;
+    max-height: none;
+    transform: none;
+  }
+
+  .beliefs-dialog-panel {
+    max-height: calc(100vh - 1rem);
+  }
+
+  .beliefs-dialog-header,
+  .beliefs-dialog-body {
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   .map-placeholder {

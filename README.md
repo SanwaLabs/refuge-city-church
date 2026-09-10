@@ -45,7 +45,11 @@ DEPLOYMENT.md   Hosting, DNS, and GitHub Pages setup
 ## Editing Content
 
 The homepage is one file. Each part of the page is a `<section>` with an `id`
-that the nav links to: `#about`, `#pastors`, `#services`, `#location`.
+that the nav links to: `#about`, `#beliefs`, `#pastors`, `#services`, `#location`.
+
+The Statement of Belief lives in a native `<dialog>` modal opened from the
+`#beliefs` section. No libraries are involved; open/close logic is a short
+inline script in `index.html`.
 
 Service times appear in three places, so update all of them together:
 
@@ -62,6 +66,17 @@ After changing `styles.css`, bump the version in the stylesheet link in
 ```html
 <link rel="stylesheet" href="styles.css?v=1.0.3">
 ```
+
+## Search indexing
+
+Every page currently includes:
+
+```html
+<meta name="robots" content="noindex, nofollow">
+```
+
+Remove that tag from each page when the site is ready to appear in search
+results (see the Launch item on `/todo/`).
 
 ## TODO List
 

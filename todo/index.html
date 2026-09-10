@@ -135,6 +135,27 @@
     .todo-list del {
       color: var(--color-muted);
     }
+
+    .todo-changes {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .todo-changes li {
+      margin: 0.75rem 0;
+      color: var(--color-muted);
+      font-size: 0.95rem;
+    }
+
+    .todo-change-date {
+      display: block;
+      color: var(--color-clay-dark);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
   </style>
 </head>
 
@@ -152,8 +173,23 @@
       <h2>September 2026</h2>
       <ul class="todo-list">
         <li>New service times</li>
-        <li>Statement of belief section</li>
+        <li class="done"><del>Initial Statement of belief section</del></li>
         <li>Slideshow (First draft)</li>
+      </ul>
+
+      <h2>Launch</h2>
+      <ul class="todo-list">
+        <li>Go live (remove <code>noindex, nofollow</code> from every page)</li>
+      </ul>
+
+      <h2>Changes</h2>
+      <ul class="todo-changes">
+        <li>
+          <span class="todo-change-date">September 9, 2026</span>
+          Added a Statement of Belief section on the homepage that opens the full
+          articles in a native dialog modal (no libraries). Sitewide
+          <code>noindex, nofollow</code> is on for now until go-live.
+        </li>
       </ul>
     </div>
   </main>

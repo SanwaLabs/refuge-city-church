@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
   <meta name="description"
     content="Refuge City Church in Palmdale, California. Join us for weekly services, prayer, and community.">
   <title>Refuge City Church | Palmdale, CA</title>
@@ -12,7 +13,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=1.0.2">
+  <link rel="stylesheet" href="styles.css?v=1.0.3">
 </head>
 
 <body>
@@ -27,6 +28,7 @@
     </a>
     <nav data-hf-id="hf-84uz" class="main-nav" aria-label="Main navigation">
       <a data-hf-id="hf-04ss" href="#about">About</a>
+      <a href="#beliefs">Beliefs</a>
       <a data-hf-id="hf-tumk" href="#pastors">Pastors</a>
       <a data-hf-id="hf-8btc" href="#services">Services</a>
       <a data-hf-id="hf-ckzy" href="#location">Location</a>
@@ -77,6 +79,21 @@
           transformed by the hope of Christ.
         </p>
       </div>
+    </section>
+
+    <section class="section beliefs-section" id="beliefs">
+      <div class="section-heading">
+        <p class="eyebrow">What We Believe</p>
+        <h2>Statement of Belief</h2>
+        <p>
+          Our faith is rooted in Scripture and centered on Jesus Christ.
+          Read the full articles that guide our church family.
+        </p>
+      </div>
+      <button type="button" class="button button-primary" id="open-beliefs-modal"
+        aria-haspopup="dialog" aria-controls="beliefs-dialog">
+        Read our Statement of Belief
+      </button>
     </section>
 
     <section data-hf-id="hf-mdwj" class="section pastors-section" id="pastors">
@@ -172,6 +189,176 @@
     <p data-hf-id="hf-mocg">© 2026 Refuge City Church. All rights reserved.</p>
     <p data-hf-id="hf-rtb5">Palmdale, California | Wednesdays at 6:30 PM</p>
   </footer>
+
+  <dialog class="beliefs-dialog" id="beliefs-dialog" aria-labelledby="beliefs-dialog-title">
+    <div class="beliefs-dialog-panel">
+      <header class="beliefs-dialog-header">
+        <h2 id="beliefs-dialog-title">The Official Articles of Faith</h2>
+        <button type="button" class="beliefs-dialog-close" id="close-beliefs-modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </header>
+      <div class="beliefs-dialog-body">
+        <article class="belief-article">
+          <h3>The Bible</h3>
+          <ul>
+            <li>The Bible is the inspired, infallible, and authoritative Word of God.</li>
+            <li>
+              It serves as the ultimate guide and absolute rule for Christian faith and daily practice.
+              <sup class="belief-cite">[<a href="https://www.obsctt.org/wp-content/uploads/2023/04/ARTICLE-OF-FAITH-revised.pdf" target="_blank" rel="noreferrer noopener">1</a>, <a href="https://pacificopenbible.com/about-us/our-core-beliefs" target="_blank" rel="noreferrer noopener">2</a>, <a href="https://www.open-bible.org/about-us" target="_blank" rel="noreferrer noopener">3</a>]</sup>
+            </li>
+          </ul>
+        </article>
+        <article class="belief-article">
+          <h3>God and the Trinity</h3>
+          <ul>
+            <li>There is only one living and true God, who exists eternally in three distinct persons: the Father, the Son, and the Holy Spirit.</li>
+            <li>
+              All three persons of the Trinity are equal in divine perfection, attributes, power, and eternity.
+              <sup class="belief-cite">[<a href="https://www.openbiblechristianschool.org/statement-of-faith" target="_blank" rel="noreferrer noopener">1</a>, <a href="https://www.openbiblecenter.org/beliefs" target="_blank" rel="noreferrer noopener">2</a>, <a href="https://www.open-bible.org/about-us" target="_blank" rel="noreferrer noopener">3</a>, <a href="https://www.obsctt.org/wp-content/uploads/2023/04/ARTICLE-OF-FAITH-revised.pdf" target="_blank" rel="noreferrer noopener">4</a>]</sup>
+            </li>
+          </ul>
+        </article>
+        <article class="belief-article">
+          <h3>Jesus Christ</h3>
+          <ul>
+            <li>Jesus is fully divine and co-eternal with the Father.</li>
+            <li>Core doctrines include His virgin birth, sinless life, recorded miracles, and vicarious, atoning death on the cross.</li>
+            <li>
+              Believers affirm His physical bodily resurrection, ascension to the right hand of God, and His literal future return in power and glory.
+              <sup class="belief-cite">[<a href="https://pacificopenbible.com/about-us/our-core-beliefs" target="_blank" rel="noreferrer noopener">1</a>, <a href="https://www.obsctt.org/wp-content/uploads/2023/04/ARTICLE-OF-FAITH-revised.pdf" target="_blank" rel="noreferrer noopener">2</a>, <a href="https://www.openbiblechristianschool.org/statement-of-faith" target="_blank" rel="noreferrer noopener">3</a>]</sup>
+            </li>
+          </ul>
+        </article>
+        <article class="belief-article">
+          <h3>Humanity and the Fall</h3>
+          <ul>
+            <li>Humanity was created good but fell into transgression through willful disobedience, inheriting a sinful Adamic nature.</li>
+            <li>
+              Because of this fall, people suffer total spiritual inability to rescue or save themselves through human effort.
+              <sup class="belief-cite">[<a href="https://www.openbible.org/about/who-we-are" target="_blank" rel="noreferrer noopener">1</a>, <a href="https://www.openbiblechristianschool.org/statement-of-faith" target="_blank" rel="noreferrer noopener">2</a>, <a href="https://pacificopenbible.com/about-us/our-core-beliefs" target="_blank" rel="noreferrer noopener">3</a>, <a href="https://www.openbibleeast.org/statement-of-faith" target="_blank" rel="noreferrer noopener">4</a>]</sup>
+            </li>
+          </ul>
+        </article>
+        <article class="belief-article">
+          <h3>The Plan of Redemption and Salvation</h3>
+          <ul>
+            <li>Jesus Christ was the planned sacrifice from the foundation of the world to bear the curse of human sin.</li>
+            <li>Salvation is a free gift provided by God's grace alone and cannot be earned.</li>
+            <li>It is received exclusively through sincere, godly repentance and personal faith accepting Jesus Christ as Lord and Savior.</li>
+            <li>
+              Upon salvation, the Holy Spirit regenerates the believer, making them a completely new creation.
+              <sup class="belief-cite">[<a href="https://www.openbibleeast.org/statement-of-faith" target="_blank" rel="noreferrer noopener">1</a>, <a href="https://www.obsctt.org/wp-content/uploads/2023/04/ARTICLE-OF-FAITH-revised.pdf" target="_blank" rel="noreferrer noopener">2</a>, <a href="https://pacificopenbible.com/about-us/our-core-beliefs" target="_blank" rel="noreferrer noopener">3</a>]</sup>
+            </li>
+          </ul>
+        </article>
+        <article class="belief-article">
+          <h3>Water Baptism</h3>
+          <ul>
+            <li>Believers practice complete water baptism by immersion in the name of the Father, Son, and Holy Spirit.</li>
+            <li>It serves as an commanded, outward public sign of the inward spiritual transformation that occurred at conversion.</li>
+            <li>
+              It is explicitly not viewed as a strict prerequisite or requirement to obtain salvation.
+              <sup class="belief-cite">[<a href="https://openbiblerc.org/core-beliefs-open-bible-church-what-we-believe/" target="_blank" rel="noreferrer noopener">1</a>, <a href="https://www.open-bible.org/about-us" target="_blank" rel="noreferrer noopener">2</a>]</sup>
+            </li>
+          </ul>
+        </article>
+        <article class="belief-article">
+          <h3>Communion</h3>
+          <ul>
+            <li>The church partakes in the bread and the cup to remember Christ's death, burial, and resurrection.</li>
+            <li>
+              They practice open communion, meaning any baptized Christian believer is welcome to participate regardless of their formal denomination or local church affiliation.
+              <sup class="belief-cite">[<a href="https://www.open-bible.org/about-us" target="_blank" rel="noreferrer noopener">1</a>, <a href="https://www.openbibleeast.org/statement-of-faith" target="_blank" rel="noreferrer noopener">2</a>]</sup>
+            </li>
+          </ul>
+        </article>
+        <article class="belief-article">
+          <h3>The Baptism in the Holy Spirit</h3>
+          <ul>
+            <li>While the Holy Spirit permanently indwells every Christian at the exact moment of salvation, the "Baptism in the Holy Spirit" is a distinct, subsequent experience.</li>
+            <li>This experience releases spiritual power through faith, enabling believers to live holy lives and operate in spiritual gifts.</li>
+            <li>
+              Consistent with New Testament accounts, believers expect this baptism to be accompanied by speaking in tongues and other biblical manifestations.
+              <sup class="belief-cite">[<a href="https://openbiblerc.org/core-beliefs-open-bible-church-what-we-believe/" target="_blank" rel="noreferrer noopener">1</a>]</sup>
+            </li>
+          </ul>
+        </article>
+        <article class="belief-article">
+          <h3>Evangelism and Missions</h3>
+          <ul>
+            <li>Following the Great Commission, the church is commanded to spread the Gospel message globally to every nation, tongue, and ethnicity.</li>
+            <li>
+              The spiritual health and growth of the local church relies on active sacrifice and support for global missionary work.
+              <sup class="belief-cite">[<a href="https://openbiblerc.org/core-beliefs-open-bible-church-what-we-believe/" target="_blank" rel="noreferrer noopener">1</a>]</sup>
+            </li>
+          </ul>
+        </article>
+        <article class="belief-article">
+          <h3>The Final Judgment and Future State</h3>
+          <ul>
+            <li>There will be a future resurrection of both the saved and the lost for a final judgment.</li>
+            <li>
+              Those saved through Christ will be resurrected to enjoy eternal life with God in heaven, while those who reject salvation will face eternal punishment and damnation in hell.
+              <sup class="belief-cite">[<a href="https://pacificopenbible.com/about-us/our-core-beliefs" target="_blank" rel="noreferrer noopener">1</a>]</sup>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </dialog>
+
+  <script>
+    (function () {
+      var dialog = document.getElementById("beliefs-dialog");
+      var openBtn = document.getElementById("open-beliefs-modal");
+      var closeBtn = document.getElementById("close-beliefs-modal");
+      if (!dialog || !openBtn || !closeBtn) return;
+
+      var supportsModal = typeof dialog.showModal === "function";
+
+      function openDialog() {
+        if (supportsModal) {
+          dialog.showModal();
+        } else {
+          dialog.setAttribute("open", "");
+          dialog.classList.add("is-fallback");
+        }
+        document.body.classList.add("modal-open");
+        closeBtn.focus();
+      }
+
+      function closeDialog() {
+        if (supportsModal && dialog.open) {
+          dialog.close();
+        } else {
+          dialog.removeAttribute("open");
+          dialog.classList.remove("is-fallback");
+        }
+        document.body.classList.remove("modal-open");
+        openBtn.focus();
+      }
+
+      openBtn.addEventListener("click", openDialog);
+      closeBtn.addEventListener("click", closeDialog);
+
+      dialog.addEventListener("click", function (event) {
+        if (event.target === dialog) closeDialog();
+      });
+
+      dialog.addEventListener("close", function () {
+        document.body.classList.remove("modal-open");
+      });
+
+      if (!supportsModal) {
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape" && dialog.hasAttribute("open")) {
+            closeDialog();
+          }
+        });
+      }
+    })();
+  </script>
 </body>
 
 </html>
